@@ -79,4 +79,7 @@ dependencies {
     api 'com.github.yalantis:ucrop:2.2.1-native'
     //二维码扫描
     api 'me.dm7.barcodescanner:zbar:1.9.3'
+
+    api 'com.bigkoo:convenientbanner:2.0.5'
+    api 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
 }

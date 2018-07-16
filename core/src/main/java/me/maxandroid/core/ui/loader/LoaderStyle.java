@@ -1,4 +1,4 @@
-package me.maxandroid.core.ui;
+package me.maxandroid.core.ui.loader;
 
 /**
  * Created by 傅令杰 on 2017/4/2

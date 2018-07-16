@@ -1,4 +1,4 @@
-package me.maxandroid.core.ui;
+package me.maxandroid.core.ui.loader;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatDialog;

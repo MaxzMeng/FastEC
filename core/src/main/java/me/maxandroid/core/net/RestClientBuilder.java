@@ -9,7 +9,7 @@ import me.maxandroid.core.net.callback.IError;
 import me.maxandroid.core.net.callback.IFailure;
 import me.maxandroid.core.net.callback.IRequest;
 import me.maxandroid.core.net.callback.ISuccess;
-import me.maxandroid.core.ui.LoaderStyle;
+import me.maxandroid.core.ui.loader.LoaderStyle;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 
