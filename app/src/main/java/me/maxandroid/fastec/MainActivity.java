@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBar;
 import android.widget.Toast;
 
 import me.maxandroid.core.activities.ProxyActivity;
+import me.maxandroid.core.app.Latte;
 import me.maxandroid.core.delegates.LatteDelegate;
 import me.maxandroid.core.ui.launcher.ILauncherListener;
 import me.maxandroid.core.ui.launcher.OnLauncherFinishTag;
@@ -13,6 +14,7 @@ import me.maxandroid.ec.launcher.LauncherDelegate;
 import me.maxandroid.ec.main.EcBottomDelegate;
 import me.maxandroid.ec.sign.ISignListener;
 import me.maxandroid.ec.sign.SignInDelegate;
+import qiu.niorgai.StatusBarCompat;
 
 public class MainActivity extends ProxyActivity implements ISignListener, ILauncherListener {
     @Override
@@ -22,6 +24,8 @@ public class MainActivity extends ProxyActivity implements ISignListener, ILaunc
         if (actionBar != null) {
             actionBar.hide();
         }
+        Latte.getConfigurator().withActivity(this);
+        StatusBarCompat.translucentStatusBar(this, true);
     }
 
     @Override
