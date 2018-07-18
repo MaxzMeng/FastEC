@@ -10,6 +10,7 @@ import me.maxandroid.core.delegates.LatteDelegate;
 import me.maxandroid.core.ui.launcher.ILauncherListener;
 import me.maxandroid.core.ui.launcher.OnLauncherFinishTag;
 import me.maxandroid.ec.launcher.LauncherDelegate;
+import me.maxandroid.ec.main.EcBottomDelegate;
 import me.maxandroid.ec.sign.ISignListener;
 import me.maxandroid.ec.sign.SignInDelegate;
 
@@ -42,11 +43,11 @@ public class MainActivity extends ProxyActivity implements ISignListener, ILaunc
     public void onLauncherFinish(OnLauncherFinishTag tag) {
         switch (tag) {
             case SINGED:
-                Toast.makeText(this, "登陆了", Toast.LENGTH_SHORT).show();
-                startWithPop(new ExampleDelegate());
+//                Toast.makeText(this, "登陆了", Toast.LENGTH_SHORT).show();
+                startWithPop(new EcBottomDelegate());
                 break;
             case NOT_SINGNED:
-                Toast.makeText(this, "没登录", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "没登录", Toast.LENGTH_SHORT).show();
                 startWithPop(new SignInDelegate());
                 break;
             default:
