@@ -18,8 +18,8 @@ public class App extends Application {
                 .withIcon(new FontAwesomeModule())
                 .withIcon(new FontEcModule())
                 .withLoaderDelayed(1000)
-                .withApiHost("http:127.0.0.1/")
-                .withInterceptor(new DebugInterceptor("index", R.raw.test))
+                .withApiHost("http://www.wanandroid.com/tools/mockapi/7563/")
+                .withInterceptor(new DebugInterceptor("test", R.raw.test))
                 .configure();
         DatabaseManager.getInstance().init(this);
         initStetho();
