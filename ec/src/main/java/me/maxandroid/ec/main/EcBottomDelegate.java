@@ -9,6 +9,7 @@ import me.maxandroid.core.delegates.bottom.BottomItemDelegate;
 import me.maxandroid.core.delegates.bottom.BottomTabBean;
 import me.maxandroid.core.delegates.bottom.ItemBuilder;
 import me.maxandroid.ec.main.cart.CartDelegate;
+import me.maxandroid.ec.main.discover.DiscoverDelegate;
 import me.maxandroid.ec.main.index.IndexDelegate;
 import me.maxandroid.ec.main.sort.SortDelegate;
 
@@ -19,7 +20,7 @@ public class EcBottomDelegate extends BaseBottomDelegate {
         final LinkedHashMap<BottomTabBean, BottomItemDelegate> items = new LinkedHashMap<>();
         items.put(new BottomTabBean("{fa-home}", "主页"), new IndexDelegate());
         items.put(new BottomTabBean("{fa-sort}", "分类"), new SortDelegate());
-        items.put(new BottomTabBean("{fa-compass}", "发现"), new IndexDelegate());
+        items.put(new BottomTabBean("{fa-compass}", "发现"), new DiscoverDelegate());
         items.put(new BottomTabBean("{fa-shopping-cart}", "购物车"), new CartDelegate());
         items.put(new BottomTabBean("{fa-user}", "我的"), new IndexDelegate());
         return builder.addItems(items).build();

@@ -6,6 +6,7 @@ import com.facebook.stetho.Stetho;
 import com.joanzapata.iconify.fonts.FontAwesomeModule;
 
 import me.maxandroid.core.app.Latte;
+import me.maxandroid.core.delegates.web.event.TestEvent;
 import me.maxandroid.core.net.interceptor.DebugInterceptor;
 import me.maxandroid.ec.database.DatabaseManager;
 import me.maxandroid.ec.icon.FontEcModule;
@@ -18,9 +19,12 @@ public class App extends Application {
                 .withIcon(new FontAwesomeModule())
                 .withIcon(new FontEcModule())
                 .withLoaderDelayed(1000)
+                .withJavascriptInterface("latte")
+                .withWebEvent("test", new TestEvent())
                 .withApiHost("http://www.wanandroid.com/tools/mockapi/7563/")
                 .withInterceptor(new DebugInterceptor("test", R.raw.test))
                 .configure();
+
         DatabaseManager.getInstance().init(this);
         initStetho();
     }
