@@ -68,20 +68,25 @@
   "message": "OK",
   "data": [
     {
-      "title": "商品标题1",
-      "desc": "商品的详细描述1",
       "id": 1,
+      "thumb": "https://i8.mifile.cn/b2c-mimall-media/13bd4c6106f7cf53a3d779340b180be6.jpg",
+      "title": "商品标题1",
       "price": 1.00,
-      "count": 2,
-      "thumb": "https://i8.mifile.cn/b2c-mimall-media/13bd4c6106f7cf53a3d779340b180be6.jpg"
+      "time": "2018-7-20"
     },
     {
-      "title": "商品标题2",
-      "desc": "商品的详细描述2",
       "id": 2,
+      "thumb": "https://i8.mifile.cn/b2c-mimall-media/13bd4c6106f7cf53a3d779340b180be6.jpg",
+      "title": "商品标题2",
       "price": 2.00,
-      "count": 3,
-      "thumb": "https://i8.mifile.cn/b2c-mimall-media/13bd4c6106f7cf53a3d779340b180be6.jpg"
+      "time": "2018-7-20"
+    },
+    {
+      "id": 3,
+      "thumb": "https://i8.mifile.cn/b2c-mimall-media/13bd4c6106f7cf53a3d779340b180be6.jpg",
+      "title": "商品标题3",
+      "price": 3.00,
+      "time": "2018-7-20"
     }
   ]
 }

@@ -2,6 +2,7 @@ package me.maxandroid.core.ui.recycler;
 
 public enum MultipleFields {
     ITEM_TYPE,
+    TITLE,
     TEXT,
     IMAGE_URL,
     BANNERS,
